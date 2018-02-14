@@ -14,3 +14,11 @@ spring:
 mybatis:
   mapper-locations: classpath:mapper/*.xml
   type-aliases-package: com.github.crab2died.domain
+
+
+# \u65E5\u5FD7
+logging:
+  file: /logs/my-boot/my-boot.log
+
+debug: true
+
