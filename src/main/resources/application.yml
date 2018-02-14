@@ -10,15 +10,19 @@ spring:
         # \u4F7F\u7528druid\u6570\u636E\u6E90
         type: com.alibaba.druid.pool.DruidDataSource
         driver-class-name: com.mysql.jdbc.Driver
+        druid:
+          max-active: 3
+          min-idle: 1
+          max-wait: 60000
+          initial-size: 1
 
 mybatis:
   mapper-locations: classpath:mapper/*.xml
   type-aliases-package: com.github.crab2died.domain
 
-
 # \u65E5\u5FD7
 logging:
   file: /logs/my-boot/my-boot.log
 
-debug: true
+debug: false
 
