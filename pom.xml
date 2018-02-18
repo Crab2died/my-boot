@@ -54,11 +54,6 @@
         <!-- alibaba的druid数据库连接池 -->
         <dependency>
             <groupId>com.alibaba</groupId>
-            <artifactId>druid</artifactId>
-            <version>${druid.version}</version>
-        </dependency>
-        <dependency>
-            <groupId>com.alibaba</groupId>
             <artifactId>druid-spring-boot-starter</artifactId>
             <version>${druid.version}</version>
         </dependency>
@@ -80,7 +75,7 @@
                     <descriptors>
                         <descriptor>assembly.xml</descriptor>
                     </descriptors>
-                    <outputDirectory>./</outputDirectory>
+                    <!--<outputDirectory>./</outputDirectory>-->
                 </configuration>
                 <executions>
                     <execution>
